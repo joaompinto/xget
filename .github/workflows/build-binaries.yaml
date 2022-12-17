@@ -41,14 +41,14 @@ jobs:
             CMD_BUILD: >
                 pwd &&
                 ls xget/*.py &&
-                pyinstaller -F -w -n clipster -i resources/clipster.icns __main__.py &&
+                pyinstaller -F -w -n clipster -i resources/clipster.icns xget/__main__.py &&
                 cd dist/ &&
                 zip -r9 clipster clipster.app/
             OUT_FILE_NAME: clipster.zip
             ASSET_MIME: application/zip
           - os: windows-latest
             TARGET: windows
-            CMD_BUILD: pyinstaller -F -w -n clipster -i resources/clipster.ico __main__.py
+            CMD_BUILD: pyinstaller -F -w -n clipster -i resources/clipster.ico xget/__main__.py
             OUT_FILE_NAME: clipster.exe
             ASSET_MIME: application/vnd.microsoft.portable-executable
     steps:
