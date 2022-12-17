@@ -39,6 +39,7 @@ jobs:
           - os: macos-latest
             TARGET: macos
             CMD_BUILD: >
+                ls *.py &&
                 pyinstaller -F -w -n clipster -i resources/clipster.icns __main__.py &&
                 cd dist/ &&
                 zip -r9 clipster clipster.app/
