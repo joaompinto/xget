@@ -4,3 +4,6 @@ requires = ["setuptools>=42", "wheel", "setuptools_scm[toml]>=3.4"]
 
 [tool.setuptools_scm]
 write_to = "xget/version.py"
+
+[tool.ruff]
+line-length = 120
