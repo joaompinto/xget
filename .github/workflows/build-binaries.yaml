@@ -43,8 +43,8 @@ jobs:
                 ls xget/*.py &&
                 pyinstaller -F -w -n xget  xget/__main__.py &&
                 cd dist/ &&
-                zip -r9 zget xget.app/
-            OUT_FILE_NAME: clipster.zip
+                zip -r9 xget xget.app/
+            OUT_FILE_NAME: xget.zip
             ASSET_MIME: application/zip
           - os: windows-latest
             TARGET: windows
