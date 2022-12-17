@@ -1,5 +1,5 @@
 black
-flake8
+ruff
 pre-commit
 pytest
 setuptools_scm
