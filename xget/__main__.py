@@ -1,7 +1,6 @@
 import typer
+from download import download
 from print_err import print_err
-
-from .download import download
 
 
 def main(url: str, checksum: str, force: bool = False):
